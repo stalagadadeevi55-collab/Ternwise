@@ -1,8 +1,8 @@
-# Project Laddu Travel Planner MVP
+# Ternwise MVP
 
 ## Product Promise
 
-Project Laddu helps groups plan travel by handling the high-consequence details people forget: emergency planning, documents, embassy and consulate guidance, medical contacts, accessibility, food needs, packing, and shared trip coordination.
+Ternwise helps groups plan travel by handling the high-consequence details people forget: emergency planning, documents, embassy and consulate guidance, medical contacts, accessibility, food needs, packing, and shared trip coordination.
 
 ## MVP Audience
 
@@ -134,4 +134,3 @@ MVP includes simple dues tracking without payment processing.
 The app must show a planning-assistance disclaimer. Users must verify medical, legal, passport, visa, embassy, emergency, and safety information with official sources.
 
 Future sponsored placements must be clearly labeled as sponsored or ads.
-

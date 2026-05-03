@@ -85,7 +85,7 @@ function App() {
         <nav aria-label="Primary navigation">
           <div className="brand">
             <span className="brandMark">L</span>
-            <span>Project Laddu</span>
+            <span>Ternwise</span>
           </div>
           <div className="navActions">
             <button type="button" aria-label="View trip assistant">

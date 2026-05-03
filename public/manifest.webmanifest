@@ -1,6 +1,6 @@
 {
-  "name": "Project Laddu Travel Planner",
-  "short_name": "Laddu Travel",
+  "name": "Ternwise",
+  "short_name": "Ternwise",
   "description": "Group travel planning for emergency, accessibility, document, food, and checklist details.",
   "start_url": "/",
   "scope": "/",
@@ -16,4 +16,3 @@
     }
   ]
 }
-

@@ -1,4 +1,4 @@
-# Project Laddu Travel Planner
+# Ternwise
 
 Installable SPA/PWA MVP for privacy-aware group travel planning.
 
@@ -26,4 +26,3 @@ npm run dev
 - Web/PWA first for friends and family testing.
 - Android Play Store later with Capacitor Android app bundle.
 - iOS App Store later with Capacitor, Xcode, App Store Connect, and Apple Developer Program membership.
-

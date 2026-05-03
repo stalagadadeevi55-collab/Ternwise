@@ -1,4 +1,4 @@
-const CACHE_NAME = 'laddu-travel-mvp-v1'
+const CACHE_NAME = 'ternwise-mvp-v1'
 const APP_SHELL = ['/', '/index.html', '/manifest.webmanifest', '/pwa-icon.svg']
 
 self.addEventListener('install', (event) => {
@@ -34,4 +34,3 @@ self.addEventListener('fetch', (event) => {
     }),
   )
 })
-
