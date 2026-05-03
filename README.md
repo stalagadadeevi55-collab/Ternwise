@@ -19,6 +19,7 @@ npm run dev
 ## Product Notes
 
 - Read [docs/mvp-spec.md](docs/mvp-spec.md) for the MVP scope captured from the product interview.
+- Read [docs/onboarding-runbook.md](docs/onboarding-runbook.md) for developer onboarding, account setup, Supabase setup, deployment, and git workflow.
 - Read [src/data/schema-notes.md](src/data/schema-notes.md) for the first Supabase data model direction.
 
 ## Store Path
