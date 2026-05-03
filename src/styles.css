@@ -1,6 +1,14 @@
 :root {
-  color: #17211f;
-  background: #f6f3ea;
+  color: #102536;
+  background: #f8fbff;
+  --sky: #8fd8ff;
+  --sea: #087ea4;
+  --aqua: #49c8c1;
+  --sun: #ffd166;
+  --coral: #ff6b5a;
+  --ink: #102536;
+  --cloud: #f8fbff;
+  --mist: #eaf7ff;
   font-family:
     Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
     sans-serif;
@@ -31,11 +39,11 @@ main {
   min-height: 92vh;
   padding: 22px clamp(18px, 4vw, 56px) 48px;
   background:
-    linear-gradient(120deg, rgba(21, 62, 53, 0.92), rgba(21, 62, 53, 0.68)),
+    linear-gradient(120deg, rgba(6, 78, 112, 0.82), rgba(48, 174, 184, 0.42)),
     url("https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1800&q=80");
   background-position: center;
   background-size: cover;
-  color: #fffaf0;
+  color: var(--cloud);
 }
 
 nav {
@@ -55,9 +63,11 @@ nav {
 
 .brandMark {
   align-items: center;
-  background: #f4c95d;
+  background:
+    radial-gradient(circle at 59% 38%, #ffffff 0 12%, transparent 13%),
+    linear-gradient(135deg, var(--sun), var(--coral));
   border-radius: 8px;
-  color: #153e35;
+  color: var(--ink);
   display: inline-flex;
   height: 34px;
   justify-content: center;
@@ -79,8 +89,8 @@ nav {
 }
 
 .navActions button {
-  background: rgba(255, 250, 240, 0.14);
-  color: #fffaf0;
+  background: rgba(248, 251, 255, 0.2);
+  color: var(--cloud);
   height: 40px;
   width: 40px;
 }
@@ -99,7 +109,7 @@ nav {
 }
 
 .eyebrow {
-  color: #ef7b45;
+  color: var(--coral);
   font-size: 0.76rem;
   font-weight: 800;
   margin: 0 0 10px;
@@ -107,7 +117,7 @@ nav {
 }
 
 .hero .eyebrow {
-  color: #f4c95d;
+  color: var(--sun);
 }
 
 h1,
@@ -125,7 +135,7 @@ h1 {
 }
 
 .heroCopy > p:last-of-type {
-  color: rgba(255, 250, 240, 0.86);
+  color: rgba(248, 251, 255, 0.9);
   font-size: clamp(1.02rem, 2vw, 1.25rem);
   line-height: 1.55;
   max-width: 660px;
@@ -144,23 +154,66 @@ h1 {
 }
 
 .primary {
-  background: #f4c95d;
-  color: #153e35;
+  background: var(--sun);
+  color: var(--ink);
   font-weight: 800;
 }
 
 .secondary {
-  background: rgba(255, 250, 240, 0.14);
-  color: #fffaf0;
+  background: rgba(248, 251, 255, 0.2);
+  color: var(--cloud);
+}
+
+.brandPreview {
+  align-items: center;
+  display: grid;
+  gap: 18px;
+  justify-items: center;
+  justify-self: end;
+  max-width: 420px;
+  width: 100%;
+}
+
+.logoStage {
+  aspect-ratio: 1;
+  border-radius: 44% 56% 49% 51% / 52% 43% 57% 48%;
+  filter: drop-shadow(0 28px 58px rgba(0, 0, 0, 0.34));
+  max-width: 320px;
+  overflow: hidden;
+  width: min(72vw, 320px);
+}
+
+.shaderLogo {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+.logoCaption {
+  color: var(--cloud);
+  display: grid;
+  gap: 2px;
+  justify-items: center;
+  text-align: center;
+}
+
+.logoCaption span {
+  font-size: clamp(2rem, 6vw, 3.25rem);
+  font-weight: 900;
+  line-height: 1;
+}
+
+.logoCaption strong {
+  color: var(--sun);
+  font-size: 1rem;
 }
 
 .phoneShell {
-  background: #fffaf0;
+  background: rgba(248, 251, 255, 0.96);
   border: 1px solid rgba(255, 255, 255, 0.38);
   border-radius: 28px;
   box-shadow: 0 28px 80px rgba(0, 0, 0, 0.28);
   color: #17211f;
-  justify-self: end;
   max-width: 380px;
   padding: 18px;
   width: 100%;
@@ -176,9 +229,9 @@ h1 {
 }
 
 .status {
-  background: #d8ebe0;
+  background: #d7f8ef;
   border-radius: 999px;
-  color: #153e35;
+  color: #06645f;
   font-size: 0.72rem;
   padding: 6px 9px;
 }
@@ -193,7 +246,7 @@ h1 {
 .stackGrid article {
   align-items: flex-start;
   background: #ffffff;
-  border: 1px solid #e6e0d2;
+  border: 1px solid #d5ecf8;
   border-radius: 8px;
   display: flex;
   gap: 12px;
@@ -204,7 +257,7 @@ h1 {
 .featureList p,
 .stackGrid p,
 .destinationCard p {
-  color: #58615d;
+  color: #536678;
   line-height: 1.5;
   margin-bottom: 0;
 }
@@ -234,14 +287,14 @@ h2 {
 }
 
 .destinationCard {
-  background: #fffaf0;
-  border: 1px solid #e0d4bd;
+  background: #ffffff;
+  border: 1px solid #d5ecf8;
   border-radius: 8px;
   padding: 18px;
 }
 
 .destinationCard span {
-  color: #a3492b;
+  color: #087ea4;
   display: block;
   font-size: 0.75rem;
   font-weight: 800;
@@ -273,7 +326,7 @@ h2 {
 .workflow li {
   align-items: center;
   background: #ffffff;
-  border: 1px solid #e6e0d2;
+  border: 1px solid #d5ecf8;
   border-radius: 8px;
   display: flex;
   gap: 12px;
@@ -282,9 +335,9 @@ h2 {
 
 .workflow li::before {
   align-items: center;
-  background: #153e35;
+  background: var(--sea);
   border-radius: 8px;
-  color: #fffaf0;
+  color: #ffffff;
   content: counter(steps);
   counter-increment: steps;
   display: inline-flex;
@@ -308,7 +361,7 @@ h2 {
 }
 
 .stackGrid svg {
-  color: #ef7b45;
+  color: var(--coral);
   margin-bottom: 14px;
 }
 
@@ -324,13 +377,23 @@ h2 {
     grid-template-columns: 1fr;
   }
 
+  .brandPreview,
   .phoneShell {
     justify-self: stretch;
     max-width: none;
   }
 
+  .brandPreview {
+    order: -1;
+  }
+
+  .logoStage {
+    max-width: 230px;
+    width: min(58vw, 230px);
+  }
+
   h1 {
-    font-size: clamp(2.35rem, 13vw, 4.4rem);
+    font-size: clamp(2.2rem, 11vw, 4rem);
   }
 }
 
@@ -347,4 +410,3 @@ h2 {
     width: 100%;
   }
 }
-

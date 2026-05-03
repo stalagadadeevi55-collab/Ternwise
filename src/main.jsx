@@ -14,9 +14,10 @@ import {
   Utensils,
   Users,
 } from 'lucide-react'
+import { ShaderLogo } from './ShaderLogo.jsx'
 import './styles.css'
 
-if ('serviceWorker' in navigator) {
+if (import.meta.env.PROD && 'serviceWorker' in navigator) {
   window.addEventListener('load', () => {
     navigator.serviceWorker.register('/sw.js').catch(() => {
       // The app still works if registration fails in local development.
@@ -84,7 +85,7 @@ function App() {
       <section className="hero">
         <nav aria-label="Primary navigation">
           <div className="brand">
-            <span className="brandMark">L</span>
+            <span className="brandMark">T</span>
             <span>Ternwise</span>
           </div>
           <div className="navActions">
@@ -117,33 +118,42 @@ function App() {
             </div>
           </div>
 
-          <div className="phoneShell" aria-label="Trip summary preview">
-            <div className="phoneHeader">
-              <span>Yellowstone Family Trip</span>
-              <span className="status">Offline ready</span>
+          <div className="brandPreview" aria-label="Ternwise logo preview">
+            <div className="logoStage">
+              <ShaderLogo />
             </div>
-            <div className="quickCards">
-              <article>
-                <AlertTriangle size={20} />
-                <div>
-                  <strong>Emergency</strong>
-                  <p>Save urgent care, park safety, and separation steps.</p>
-                </div>
-              </article>
-              <article>
-                <Users size={20} />
-                <div>
-                  <strong>Travelers</strong>
-                  <p>2 adults, 1 senior, 2 children, stroller need noted.</p>
-                </div>
-              </article>
-              <article>
-                <CalendarDays size={20} />
-                <div>
-                  <strong>Flexible dates</strong>
-                  <p>5 days in July, price-search ready for later.</p>
-                </div>
-              </article>
+            <div className="logoCaption">
+              <span>Ternwise</span>
+              <strong>Travel Ready, Together.</strong>
+            </div>
+            <div className="phoneShell" aria-label="Trip summary preview">
+              <div className="phoneHeader">
+                <span>Yellowstone Family Trip</span>
+                <span className="status">Offline ready</span>
+              </div>
+              <div className="quickCards">
+                <article>
+                  <AlertTriangle size={20} />
+                  <div>
+                    <strong>Emergency</strong>
+                    <p>Save urgent care, park safety, and separation steps.</p>
+                  </div>
+                </article>
+                <article>
+                  <Users size={20} />
+                  <div>
+                    <strong>Travelers</strong>
+                    <p>2 adults, 1 senior, 2 children, stroller need noted.</p>
+                  </div>
+                </article>
+                <article>
+                  <CalendarDays size={20} />
+                  <div>
+                    <strong>Flexible dates</strong>
+                    <p>5 days in July, price-search ready for later.</p>
+                  </div>
+                </article>
+              </div>
             </div>
           </div>
         </div>
@@ -217,5 +227,11 @@ function App() {
     </main>
   )
 }
+
+createRoot(document.getElementById('root')).render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
+)
 
 export default App
