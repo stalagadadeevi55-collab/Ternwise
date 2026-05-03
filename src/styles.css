@@ -1,0 +1,350 @@
+:root {
+  color: #17211f;
+  background: #f6f3ea;
+  font-family:
+    Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+}
+
+button {
+  border: 0;
+  cursor: pointer;
+  font: inherit;
+}
+
+main {
+  min-height: 100vh;
+}
+
+.hero {
+  min-height: 92vh;
+  padding: 22px clamp(18px, 4vw, 56px) 48px;
+  background:
+    linear-gradient(120deg, rgba(21, 62, 53, 0.92), rgba(21, 62, 53, 0.68)),
+    url("https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1800&q=80");
+  background-position: center;
+  background-size: cover;
+  color: #fffaf0;
+}
+
+nav {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 1180px;
+}
+
+.brand {
+  align-items: center;
+  display: flex;
+  font-weight: 750;
+  gap: 10px;
+}
+
+.brandMark {
+  align-items: center;
+  background: #f4c95d;
+  border-radius: 8px;
+  color: #153e35;
+  display: inline-flex;
+  height: 34px;
+  justify-content: center;
+  width: 34px;
+}
+
+.navActions {
+  display: flex;
+  gap: 10px;
+}
+
+.navActions button,
+.heroButtons button {
+  align-items: center;
+  border-radius: 8px;
+  display: inline-flex;
+  gap: 8px;
+  justify-content: center;
+}
+
+.navActions button {
+  background: rgba(255, 250, 240, 0.14);
+  color: #fffaf0;
+  height: 40px;
+  width: 40px;
+}
+
+.heroGrid {
+  align-items: center;
+  display: grid;
+  gap: clamp(28px, 6vw, 90px);
+  grid-template-columns: minmax(0, 1.05fr) minmax(300px, 0.75fr);
+  margin: 74px auto 0;
+  max-width: 1180px;
+}
+
+.heroCopy {
+  max-width: 710px;
+}
+
+.eyebrow {
+  color: #ef7b45;
+  font-size: 0.76rem;
+  font-weight: 800;
+  margin: 0 0 10px;
+  text-transform: uppercase;
+}
+
+.hero .eyebrow {
+  color: #f4c95d;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+}
+
+h1 {
+  font-size: clamp(2.45rem, 7vw, 5.6rem);
+  line-height: 0.98;
+  margin-bottom: 22px;
+  max-width: 820px;
+}
+
+.heroCopy > p:last-of-type {
+  color: rgba(255, 250, 240, 0.86);
+  font-size: clamp(1.02rem, 2vw, 1.25rem);
+  line-height: 1.55;
+  max-width: 660px;
+}
+
+.heroButtons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 30px;
+}
+
+.heroButtons button {
+  min-height: 46px;
+  padding: 0 18px;
+}
+
+.primary {
+  background: #f4c95d;
+  color: #153e35;
+  font-weight: 800;
+}
+
+.secondary {
+  background: rgba(255, 250, 240, 0.14);
+  color: #fffaf0;
+}
+
+.phoneShell {
+  background: #fffaf0;
+  border: 1px solid rgba(255, 255, 255, 0.38);
+  border-radius: 28px;
+  box-shadow: 0 28px 80px rgba(0, 0, 0, 0.28);
+  color: #17211f;
+  justify-self: end;
+  max-width: 380px;
+  padding: 18px;
+  width: 100%;
+}
+
+.phoneHeader {
+  align-items: center;
+  display: flex;
+  font-size: 0.92rem;
+  font-weight: 800;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.status {
+  background: #d8ebe0;
+  border-radius: 999px;
+  color: #153e35;
+  font-size: 0.72rem;
+  padding: 6px 9px;
+}
+
+.quickCards {
+  display: grid;
+  gap: 12px;
+}
+
+.quickCards article,
+.featureList article,
+.stackGrid article {
+  align-items: flex-start;
+  background: #ffffff;
+  border: 1px solid #e6e0d2;
+  border-radius: 8px;
+  display: flex;
+  gap: 12px;
+  padding: 16px;
+}
+
+.quickCards p,
+.featureList p,
+.stackGrid p,
+.destinationCard p {
+  color: #58615d;
+  line-height: 1.5;
+  margin-bottom: 0;
+}
+
+.panel,
+.split {
+  margin: 0 auto;
+  max-width: 1180px;
+  padding: 58px clamp(18px, 4vw, 56px);
+}
+
+.sectionTitle {
+  max-width: 720px;
+}
+
+h2 {
+  font-size: clamp(1.85rem, 4vw, 3.2rem);
+  line-height: 1.05;
+  margin-bottom: 26px;
+}
+
+.destinationGrid,
+.stackGrid {
+  display: grid;
+  gap: 14px;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.destinationCard {
+  background: #fffaf0;
+  border: 1px solid #e0d4bd;
+  border-radius: 8px;
+  padding: 18px;
+}
+
+.destinationCard span {
+  color: #a3492b;
+  display: block;
+  font-size: 0.75rem;
+  font-weight: 800;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.destinationCard h3,
+.featureList h3,
+.stackGrid h3 {
+  margin-bottom: 7px;
+}
+
+.split {
+  display: grid;
+  gap: clamp(24px, 5vw, 72px);
+  grid-template-columns: minmax(0, 0.85fr) minmax(320px, 1fr);
+}
+
+.workflow {
+  counter-reset: steps;
+  display: grid;
+  gap: 12px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.workflow li {
+  align-items: center;
+  background: #ffffff;
+  border: 1px solid #e6e0d2;
+  border-radius: 8px;
+  display: flex;
+  gap: 12px;
+  padding: 14px;
+}
+
+.workflow li::before {
+  align-items: center;
+  background: #153e35;
+  border-radius: 8px;
+  color: #fffaf0;
+  content: counter(steps);
+  counter-increment: steps;
+  display: inline-flex;
+  flex: 0 0 32px;
+  font-weight: 800;
+  height: 32px;
+  justify-content: center;
+}
+
+.featureList {
+  display: grid;
+  gap: 12px;
+}
+
+.stackGrid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.stackGrid article {
+  display: block;
+}
+
+.stackGrid svg {
+  color: #ef7b45;
+  margin-bottom: 14px;
+}
+
+@media (max-width: 880px) {
+  .hero {
+    min-height: auto;
+  }
+
+  .heroGrid,
+  .split,
+  .destinationGrid,
+  .stackGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .phoneShell {
+    justify-self: stretch;
+    max-width: none;
+  }
+
+  h1 {
+    font-size: clamp(2.35rem, 13vw, 4.4rem);
+  }
+}
+
+@media (max-width: 520px) {
+  .hero {
+    padding-top: 16px;
+  }
+
+  .heroGrid {
+    margin-top: 48px;
+  }
+
+  .heroButtons button {
+    width: 100%;
+  }
+}
+

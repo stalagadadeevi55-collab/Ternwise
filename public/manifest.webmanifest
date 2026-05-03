@@ -1,0 +1,19 @@
+{
+  "name": "Project Laddu Travel Planner",
+  "short_name": "Laddu Travel",
+  "description": "Group travel planning for emergency, accessibility, document, food, and checklist details.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#f6f3ea",
+  "theme_color": "#153e35",
+  "icons": [
+    {
+      "src": "/pwa-icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
+
